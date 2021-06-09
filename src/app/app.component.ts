@@ -85,6 +85,7 @@ export class AppComponent {
       fillColor: 'none'
     };
 
+    (this.mapMarkers.get(2) ?? {marker: {setDraggable: ()=> null}} ).marker?.setDraggable(false);
     (this.mapMarkers.get(2) ?? {marker: {setIcon: ()=> null}} ).marker?.setIcon(symbol);
     (this.mapMarkers.get(2)?? {marker: {setPosition: () => null}} ).marker?.setPosition(pos1);
   }
